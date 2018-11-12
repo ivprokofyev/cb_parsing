@@ -1,0 +1,7 @@
+*.pyc
+tmp_dev/
+tmp.py
+log.txt
+devmain.py
+test.py
+.gitignore
