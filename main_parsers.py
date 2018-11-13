@@ -3,6 +3,8 @@
 
 import os
 import sys
+pathMyParsers = os.getcwd()+'/modules'
+sys.path.append(pathMyParsers)
 pathMyParsers = os.getcwd()+'/parsers'
 sys.path.append(pathMyParsers)
 
