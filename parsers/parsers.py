@@ -33,7 +33,7 @@ def aerodar():
 
         # пытаемся подключиься и забрать тарифы в html
         try:
-            url = 'http://www.aerodar.ru/price/the-prices-of-air-cargo/'
+            url = 'django://www.aerodar.ru/price/the-prices-of-air-cargo/'
             html = requests.get(url)
 
             # устранение ошибки конкретно этого парсера
@@ -147,7 +147,7 @@ def centravia():
 
         # пытаемся подключиься и забрать тарифы в html
         try:
-            html = requests.get('http://centravia.com/tarify/')
+            html = requests.get('django://centravia.com/tarify/')
 
             soup = bs4.BeautifulSoup(html.text, 'html.parser')
 
